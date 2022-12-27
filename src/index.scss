@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+  background-color: #0d2235;
+}
+
+.App {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      width: 400px;
+    }
+    .form-box {
+      width: 50%;
+      margin: 0 40px;
+      color: white;
+      .title {
+        text-align: center;
+        padding: 10px;
+        font-size: 3em;
+        margin-bottom: 30px;
+        &::after {
+          content: "";
+          width: 200px;
+          height: 6px;
+          background-color: #66a2fe;
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #898eff;
+    transition: .2s all;
+    cursor: pointer;
+    &:hover {
+      background-color: #7980ff;
+    }
+  }
+}
+
+.select {
+  label {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+}
+
+#Error {
+  text-align: center;
+  background-color: #d90101;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#Resultado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+  img {
+    width: 120px;
+    display: block;
+    padding: 0 5px;
+  }
+  .precio {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
