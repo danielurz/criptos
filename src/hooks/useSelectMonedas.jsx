@@ -9,7 +9,7 @@ function useSelectMonedas(label,monedas) {
         <div className='select'>
             <label htmlFor="">{label}</label>
             <select value={state} onChange={e => setState(e.target.value)}>
-                <option value="">-- Selecionar --</option>
+                <option value="">-- Select --</option>
                 {
                     monedas.map(moneda => {
                         return (

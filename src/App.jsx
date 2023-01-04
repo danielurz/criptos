@@ -39,7 +39,7 @@ function App() {
       <div className="contenedor">
         <img src={ImagenCripto} alt="" />
         <div className="form-box">
-          <p className='title'>Conversor de Criptomonedas</p>
+          <p className='title'>Cryptocurrency Converter</p>
           <Formulario
             setValores={setValores}/>
          {spinner && <Spinner/>}

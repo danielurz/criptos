@@ -8,10 +8,10 @@ function Resultado({info}) {
     <div id="Resultado">
         <img src={`https://cryptocompare.com/${IMAGEURL}`} alt=""/>
         <div>
-            <p className="precio">Precio Actual: <span>{PRICE}</span></p>
-            <p>Precio mas alto del dia: <span>{HIGHDAY}</span></p>
-            <p>Precio mas bajo del dia: <span>{LOWDAY}</span></p>
-            <p>Ultima actualizacion: <span>{LASTUPDATE}</span></p>
+            <p className="precio">Actual Price: <span>{PRICE}</span></p>
+            <p>Higher price of the day: <span>{HIGHDAY}</span></p>
+            <p>Higher price of the day: <span>{LOWDAY}</span></p>
+            <p>Last Update: <span>{LASTUPDATE}</span></p>
         </div>
     </div>
   )

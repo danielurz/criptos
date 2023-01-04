@@ -7,11 +7,11 @@ function Formulario({setValores}) {
   const [error, setError] = useState(false)
 
   const objeto = [
-    {id:'USD',nombre:'Dolar Americano'},
-    {id:'GBP',nombre:'Libra Esterlina'},
+    {id:'USD',nombre:'American Dolar'},
+    {id:'GBP',nombre:'Pound Sterling'},
     {id:'EUR',nombre:'Euro'},
-    {id:'MEX',nombre:'Peso Mexicano'},
-    {id:'COP',nombre:'Peso Colombiano'},
+    {id:'MEX',nombre:'Mexican Peso'},
+    {id:'COP',nombre:'Colombian Peso'},
   ]
 
   useEffect(() => {
@@ -35,8 +35,8 @@ function Formulario({setValores}) {
   
 
 
-  const [UseMoneda,moneda] = useSelectMonedas('Elige tu Moneda',objeto)
-  const [UseCriptomoneda,cripto] = useSelectMonedas('Elige tu Criptomoneda',criptos)
+  const [UseMoneda,moneda] = useSelectMonedas('Choose your Currency',objeto)
+  const [UseCriptomoneda,cripto] = useSelectMonedas('Choose your Crypto',criptos)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -55,10 +55,10 @@ function Formulario({setValores}) {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      {error && <div id="Error"><p>Completa Ambos Campos</p></div>}
+      {error && <div id="Error"><p>Fill both fields</p></div>}
       <UseMoneda/>
       <UseCriptomoneda/>
-      <input type="submit" value="CALCULAR" />
+      <input type="submit" value="CALCULATE" />
     </form>
   )
 }
